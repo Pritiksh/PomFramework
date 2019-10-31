@@ -61,4 +61,10 @@ public String getElementText(By locator){
 	waitForElementPresent(locator);
 	return getElement(locator).getText();
 }
+
+public void elementClick(By locator){
+	waitForElementPresent(locator);
+	getElement(locator).click();
+	
+}
 }
